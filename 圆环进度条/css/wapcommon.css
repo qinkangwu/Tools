@@ -1,0 +1,85 @@
+﻿@charset "utf-8";
+/* CSS Document */
+a:active{star:expression(this.onFocus=this.blur());}
+a:focus,button:focus{outline:none; -moz-outline:none; -webkit-outline:none;}
+:focus{outline:none;}
+/*Reset Css*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img,area,param{margin:0; padding:0;}
+html,body{margin:0; padding:0; height: 100%; font-family:arial,\5FAE\8F6F\96C5\9ED1,sans-serif; -webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+select{*behavior: url("select.htc");}/*IE6,IE7select*/
+ol,ul{padding-left:0; list-style-type:none; list-style:none;}
+img{border:none; display:inline-block; vertical-align:middle;}
+th{font-style:normal;font-weight:normal;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+address, caption, cite, code, dfn, em, th, var,strong,i,strong{font-style:normal;font-weight:normal;}
+input{display:inline-block; vertical-align:middle; font-family:arial,\5FAE\8F6F\96C5\9ED1,sans-serif;}
+fieldset{border:none;}
+legend{display:none;}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button{
+	-webkit-appearance: none;
+}
+
+.main_input .input_box input[type="date"]{
+	padding-left:0;
+	margin-left:8rem;
+	width:16rem !important;
+
+}
+
+html{font-size:62.5%;}
+body{font-size:1.4rem; background:#f4f4f4; color:#666;}
+
+/*Clear Css*/
+.clear{clear:both; font-size:0px; height:0px; line-height:0;}
+.clearfix:after{content:'\20';display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.clearfix{display:block;zoom:1;}
+html[xmlns] .clearfix{display:block;}
+* html .clearfix{height:1%;}
+
+
+/*padding*/
+.pd{padding:0.8rem 1.5rem;}
+.plr_15{padding-left:1.5rem; padding-right:1.5rem;}
+.pl_15{padding-left:1.5rem;}
+.pl_80{padding-left:8rem;}
+.pr_15{padding-right:1.5rem;}
+.pr_30{padding-right:1.5rem;}
+.pr_40{padding-right:4rem;}
+.pt_5{padding-top:.5rem;}
+.pt_10{padding-top:1rem;}
+.pt_15{padding-top:1.5rem;}
+.pt_20{padding-top:2rem;}
+.pb_5{padding-bottom:.5rem;}
+.pb_10{padding-bottom:1rem;}
+.pb_15{padding-bottom:1.5rem;}
+.pb_20{padding-bottom:2rem;}
+.pb_40{padding-bottom:4rem;}
+
+
+
+
+
+/*O型进度条*/
+.circle {width: 6rem; height: 6rem; position:relative; border-radius: 50%;}
+.circle_orange{background:#f60;}
+.circle_orange2{background:#ffad76;}
+.circle_blue{background:#0697da;}
+.pie_left,
+.pie_right {width: 6rem; height: 6rem; position: absolute; top:0;left:0;}
+.left, .right {display: block; width:6rem; height:6rem; background:#eee; border-radius: 50%; position: absolute; top: 0; left: 0; box-shadow:0 0 3px #eee;}
+.pie_right, .right {clip:rect(0,auto,auto,3rem); -webkit-clip:rect(0,auto,auto,3rem);}
+.pie_left, .left {clip:rect(0,3rem,auto,0); -webkit-clip:rect(0,3rem,auto,0);}
+
+.mask,
+.mask_btn{width: 5.4rem;height: 5.4rem;border-radius: 50%;left: 0.3rem;top: 0.3rem;position: absolute;text-align: center;line-height: 5.4rem;font-size: 1.6rem;}
+.mask_btn{z-index:4}
+.o_blue{background:#0697da;}
+.mask_bg1{background:#fff;}
+.mask_bg2{background:#f60; color:#fff;}
+
+
+
+

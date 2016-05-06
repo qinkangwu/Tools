@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>CSS自定义文件上传按钮样式，兼容主流浏览器</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<style type="text/css">
+	* {
+		margin:0;
+		padding:0;
+	}
+	body {
+		font:14px Verdana, Arial, Geneva, sans-serif;
+		color:#404040;
+		background:#f9f9f9;
+	}
+	img {
+		border-style:none;
+	}
+	.main{
+		width:300px;
+		height:60px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-left:-150px;
+		margin-top:-30px;
+	}
+	.box{
+		position:relative;
+		float:left;
+	}
+	input.uploadFile{
+		position:absolute;
+		right:0px;
+		top:0px;
+		opacity:0;
+		filter:alpha(opacity=0);
+		cursor:pointer;
+		width:276px;
+		height:36px;
+		overflow: hidden;
+	}
+	input.textbox{
+		float:left;
+		padding:5px;
+		color:#999;
+		height:24px;
+		line-height:24px;
+		border:1px #ccc solid;
+		width:200px;
+		margin-right:4px;
+	}
+	a.link{
+		float:left;
+		display:inline-block;
+		padding:4px 16px;
+		color:#fff;
+		font:14px "Microsoft YaHei", Verdana, Geneva, sans-serif;
+		cursor:pointer;
+		background-color:#0099ff;
+		line-height:28px;
+		text-decoration:none;
+	}
+</style>
+</head>
+
+<body>
+	<div class="main">
+        <div class="box">
+            <input type="text" name="copyFile"  class="textbox" />
+            <a href="javascript:void(0);"  class="link">浏览</a>
+            <input type="file" class="uploadFile" name="upload" onchange="getFile(this,'copyFile')" />
+        </div>
+        <script type="text/javascript">
+			function getFile(obj,inputName){
+				var file_name = $(obj).val();
+				$("input[name='"+inputName+"']").val(file_name);
+			}
+        </script>
+    </div>
+</body>
+</html>

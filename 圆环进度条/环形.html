@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>理财列表（嘉财有道、债权、债权转让）</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<link href="css/wapcommon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<article class="wap_main" id="">
+    
+    <article class="ks-tabs-body clearfix">
+    	<!--left s-->
+    	<article class="in_con pt_10 no1" style="display:block;padding-top: 3.6rem;">
+            <!--product1 s-->
+            <div class="clearfix bg_white plr_15 mb_10 pro_box">
+                  
+                    	<div class="circle_orange2 circle">
+                            <div class="pie_left"><div class="left"></div></div>
+                            <div class="pie_right"><div class="right"></div></div>
+                            <div class="mask_btn fs_20 mask_bg2">
+                                <div class="count_out fc_f">
+                                            <strong>30:03:55</strong>
+                                    </div>
+                            </div>
+                            <div class="mask"><span>13</span>%</div>
+                        </div>
+                    </div>
+               
+           
+            <!--product1 e-->
+            <!--product2 s-->
+            <div class="clearfix bg_white plr_15 mb_10 pro_box">
+            	
+                <div class="con_box1">
+                    
+                    <div class="r">
+                    	<div class="circle_orange2 circle">
+                            <div class="pie_left"><div class="left"></div></div>
+                            <div class="pie_right"><div class="right"></div></div>
+                             <div class="mask_btn fs_20 mask_bg2">
+                                <div class="count_out fc_f">
+                                            <strong>30:03:55</strong>
+                                    </div>
+                            </div>
+                            <div class="mask"><span>50</span>%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--product2 e-->
+
+            <!--product3 s-->
+            <div class="clearfix bg_white plr_15 mb_10 pro_box">
+                
+                <div class="con_box1">
+                    
+                    <div class="r">
+                        <div class="circle_orange2 circle">
+                            <div class="pie_left"><div class="left"></div></div>
+                            <div class="pie_right"><div class="right"></div></div>
+                            <div class="mask_btn mask_bg2">已预约</div>
+                            <div class="mask"><span>50</span>%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--product3 e-->
+            
+        </article>
+        <!--left e-->
+    </article>
+</article>
+
+<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+//O型进度条S  
+    $('.circle').each(function(index, el) {
+      var num = $('span',this).text()*3.6;
+      if (num<=180) {
+        $('.right',this).css('transform', "rotate(" + num + "deg)");
+        $('.right',this).css('transform', "rotate(" + num + "deg)");
+        $('.right',this).css('-webkit-transform', "rotate(" + num + "deg)");
+        $('.right',this).css('-o-transform', "rotate(" + num + "deg)");
+        $('.right',this).css('-ms-transform', "rotate(" + num + "deg)");
+        $('.right',this).css('-moz-transform', "rotate(" + num + "deg)");
+      } else {
+        $('.right',this).css('transform', "rotate(180deg)");
+        $('.right',this).css('transform', "rotate(" + (num - 180) + "deg)");
+        $('.right',this).css('-webkit-transform', "rotate(180deg)");
+        $('.right',this).css('-o-transform', "rotate(180deg)");
+        $('.right',this).css('-ms-transform', "rotate(180deg)");
+        $('.right',this).css('-moz-transform', "rotate(180deg)");
+        $('.left',this).css('-webkit-transform', "rotate(" + (num - 180) + "deg)");
+        $('.left',this).css('-o-transform', "rotate(" + (num - 180) + "deg)");
+        $('.left',this).css('-ms-transform', "rotate(" + (num - 180) + "deg)");
+        $('.left',this).css('-webkit-transform', "rotate(" + (num - 180) + "deg)");
+      };
+
+      /*倒计时*/
+       var time="2015/08/25 17:12:00";
+       var sh = setInterval(Count_down, 1000);
+       Count_down();
+       function Count_down(){
+         // alert(time)
+           var endtime=new Date(""+time+"");
+           var now=new Date();
+           var val=parseInt((endtime.getTime()-now.getTime())/1000);
+           var d=parseInt(val/3600/24);
+           var h=parseInt((val / 3600) % 24);
+           var m=parseInt((val/60)%60);
+           var s=parseInt(val%60);
+           if(h<10){
+               h="0"+h;
+           }
+           if(m<10){
+               m="0"+m;
+           }
+           if(s<10){
+               s="0"+s;
+           }
+           $(".count_out strong").html(h+":"+m+":"+s)
+       }
+    });//O型进度条E 
+   	
+      
+
+      
+</script>
+
+</body>
+</html>

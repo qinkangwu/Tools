@@ -1,0 +1,49 @@
+/*二级标题*/
+.header-2 h2{
+	padding-top:0.55rem;
+	font-size: 0.35rem;
+	padding-bottom: 0.525rem; 
+}
+.header-2 p{
+	line-height:0.5rem;
+	text-align:justify;
+	font-size:0.3rem;
+
+}
+/*查看此类问题*/
+.base{
+	font-size:0.3rem;
+	text-align: center;
+}
+.check{
+	margin:1.625rem auto 0;
+	width:3.7rem;
+	height: 1.125rem; 
+	border-radius: 3px;
+	background:#E5E5E5;
+	line-height:1.125rem;
+	text-align: center;
+	color:#3b3b3b; 
+}
+.problem{
+	height:1.5rem;
+	line-height: 1.5rem;
+	background-color:#fff;
+	padding-top:.5rem;
+	
+}
+.service{
+	color:#3b3b3b;
+
+}
+.service p{
+	display: inline-block;
+	padding-left:0.25rem;
+	color:#EA5A57;
+}
+.time{
+	padding-top: 0.25rem;
+}
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+    </head>
+    <body>
+    <div id="fullpage">
+    	<div class="section"><div class="slide">4</div>
+    		<div class="slide">1</div>
+    		<div class="slide">2</div>
+    		<div class="slide">3</div></div>
+    	<div class="section"><h1>第二屏</h1></div>
+    	<div class="section">第三屏
+    	</div>
+    	<div class="section">第四屏</div>
+    </div>
+    </body>
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="jquery.easings.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    	$('#fullpage').fullpage({
+    		sectionsColor:['red','blue','green','yellow'],
+    		controlArrows:false, //幻灯片箭头是否显示
+    		verticalCentered:true, //内容是否居中
+    		resize:true, //字体随着窗口缩放
+    		scrollingSpeed:700, //滚动速度 默认为700毫秒
+    		anchors:['page1','page2','page3','page4'], //设置锚链接
+    		loopTop:true,
+    		loopBottom:true,     //连续滚动
+    		loopHorizontal:true,  //循环幻灯片
+    		paddingTop:'100px',
+    		paddingBottom:0,        //设置菜单时需要
+    		fiexdElements:选择器,    //固定在底部或者底部的菜单
+    		continuousVertical:true,  //类似LOOPTOP
+    		menu:选择器,      //导航菜单
+
+    	});
+    })
+    </script>
+</html>
